@@ -1,0 +1,74 @@
+import random
+
+input("Bonjour et bienvenue dans ce projet. Nous allons fair de l'ordonnencement sur des graphes \n Appuyez sur une touche pour continuer  ")
+while True:
+    print("Que voulez-vous faire ? \n")
+    print("1. Voulez-vous faire de l'ordonnencement sur un graphe en particulier  ?\n ")
+    print("2. Voulez-vous faire de l'ordonnencement sur les graphes dans l'ordre ? \n")
+    print("3. quitter \n " )
+    choix = input("Entrez votre choix (1, 2, ou 3): ")
+
+    if choix == "1":
+        print("Quelle tableau de contraintes voulez-vous lire ? \n ")
+        # inserer les tableaux de contraintes et afficher le graphe correspondant
+        input("Appuyez sur Entrée pour continuer...")
+
+        print("Nous allons vérifier les propriétés du graphe c'est-à-dire pas de valeurs négatives ni de circuits\n ")
+        # inserer les fonctions qui permettent de vérifier
+        input("Appuyez sur Entrée pour continuer...")
+
+        print("Tout est bon on va pouvoir faire le calcul le rang des sommets du graphes \n ")
+        # Inserer la fonction du calcul des rangs
+        input("Appuyez sur Entrée pour continuer...")
+
+        print("Nous allons procéder au calcul du calendrier au plus tôt et au plus tard \n")
+        # nserer les 2 fonctions
+        input("Appuyez sur Entrée pour continuer...")
+
+        print("Pour finir nous allons faire les chemins critiquent \n ")
+        input("Appuyez sur Entrée pour continuer...")
+
+    elif choix == "2":
+        print("Si vous voulez on peut le faire soit dans l'ordre soit un graphe aléatoire  ? \n")
+        Operation = input("Entrez votre choix (1 pour l'ordre \n 2 pour aléatoire \n 3 si vous vous êtes trompé): \n")
+
+        if Operation == "1":
+            # Mettre dans l'ordre afficher le graphe 1
+            print("Quelle tableau de contraintes voulez-vous lire ?\n")
+            # inserer les tableaux de contraintes et afficher le graphe correspondant
+            input("Appuyez sur Entrée pour continuer...")
+
+            print(
+                "Nous allons vérifier les propriétés du graphe c'est-à-dire pas de valeurs négatives ni de circuits \n")
+            # inserer les fonctions qui permettent de vérifier
+            input("Appuyez sur Entrée pour continuer...")
+
+            print("Tout est bon on va pouvoir faire le calcul le rang des sommets du graphes \n")
+            # Inserer la fonction du calcul des rangs
+            input("Appuyez sur Entrée pour continuer...")
+
+            print("Nous allons procéder au calcul du calendrier au plus tôt et au plus tard \n")
+            # nserer les 2 fonctions
+            input("Appuyez sur Entrée pour continuer...")
+
+            print("Pour finir nous allons faire les chemins critiquent \n")
+            input("Appuyez sur Entrée pour continuer...")
+
+        elif Operation == "2":
+            print("Vous allez faire l'ordonnencement d'un graphe aléatoire \n")
+
+            # jsp si cest correct c'est pour lire un graphe aléatoire du 1 à 12
+            graphe_aleatoire = random.randint(1, 12)
+
+
+        elif Operation == "3":
+            print("Retour sur le menu principal \n")
+
+        else:
+            print("Erreur : choix invalide. Veuillez entrer 1, 2 ou 3  ")
+
+    elif choix == "3":
+        print("Au revoir \n ")
+        break
+    else:
+        print("Erreur : choix invalide. Veuillez entrer 1, 2, 3, ou 4.")
